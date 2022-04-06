@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+section,
+div {
+  height: 100vh;
+  width: auto;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  color: black;
+  background: url(./image/background.webp);
+  font-family: fantasy;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  padding-top: 15px;
+  margin: 0 auto;
+  font-size: 1.75rem;
+  text-align: center;
+  text-shadow: 0 3px 3px wheat;
+}
+
+h2 {
+  margin: 25px;
+  font-style: oblique;
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.chooseStyle {
+  text-align: center;
+}
+
+.column {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+}
+
+.leftHalf {
+  background: url(./image/lefthalf.jpeg);
+  grid-column: 1;
+  border-radius: 10px;
+}
+
+.rightHalf {
+  border-radius: 10px;
+  grid-column: 2;
+  box-shadow: 6px 9px 7px 0 rgb(34, 62, 78, 0.14);
+}
+
+#myImage {
+  border-radius: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  justify-self: center;
+}
+
+img {
+  position: inherit;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.imgtext {
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 51%;
+  font-size: 25px;
+  font-style: italic;
+  transform: translate(50%, -20%);
+}
+
+.form {
+  position: sticky;
+  text-align: center;
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  font-size: 15px;
+}
+
+input {
+  font: small;
+  height: 25px;
+  width: 150px;
+  border: 1px solid;
+  box-sizing: content-box;
+}
+.size {
+  font-size: 40px;
+}
+
+footer,
+h4 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}

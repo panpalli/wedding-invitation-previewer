@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+            <meta charset="UTF-8">
+            <meta name="keywords" content="wedding, inivitation, bride" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title> Wedding inivitation Planner</title>
+            
+    </head>
+   <body>
+       <h1>Wedding Inivitation Planner</h1>
+       <div class="cover">
+
+            <header></header>
+
+            <hr>
+            <br>
+
+            <div class="column">
+                <div class="leftHalf">
+                    <br>
+                    <h2> Choose Your Style</h2>
+                    <nav class="chooseStyle">
+
+                        <button class="clicker" onclick=style1();>Style 1</button>
+                        <button class="clicker" onclick=style2();>Style 2</button>
+                        <button class="clicker" onclick=style3();>Style 3</button>
+                        </nav>
+                    <div class="form">
+                        <hr>
+                        <br><br><br>
+                        <label> 1st Name:</label>
+                        <input type="text" placeholder="Please write 1st name!" id="name" onkeyup="getName()">
+                        <br>
+                        <br>
+
+                        <label> 2nd Name:</label>
+                        <input type="text" placeholder="Please write 2nd name!" id="sname" onkeyup="getsecondName()">
+                        <br>
+                        <br>
+                        <label>Wedding Date:</label>
+                        <input type="date"  name="date" id="date" onchange="getDate()">
+                        <br>
+                        <br>
+                        <label> Wedding Location:</label>
+                        <input type="text" placeholder="Wedding Location" id="location" onkeyup="getLocation()">
+                    </div>
+                </div>
+                <div class="rightHalf" id="right-col">
+                    <div class="image-wrapper">
+                        <img id="myImage" alt="img" src="./image/image1.jpeg">
+                        </div>
+                        <div class="imgtext">
+                            <p class="size">&#128152;</p>
+                            <p>You are cordially <br> invited to the wedding of</p>
+                            <p><span id="input"></span> & <span id="input2"></span></p>
+                            <p>&#128151; on the &#128147;</p>
+                            <span id="input3"></span>
+                            <p>&#128205; at &#128205;</p>
+                            <span id="input4"></span>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+            <br>
+            <br>
+                <footer>
+                    <h4>Design by MEMDUH</h4>
+                </footer>
+        <script src="script.js"></script>
+   </body>
+</html>
